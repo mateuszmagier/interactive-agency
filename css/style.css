@@ -63,4 +63,37 @@
 .container {
   padding: 0 15%; }
 
+.about-section {
+  font-family: 'Barlow Condensed', sans-serif;
+  float: left;
+  color: white; }
+  .about-section__image {
+    position: absolute;
+    width: 100%; }
+    .about-section__image--left {
+      left: 0;
+      z-index: -1; }
+    .about-section__image--right {
+      left: 0;
+      z-index: -2; }
+  .about-section__feature {
+    display: inline-block;
+    width: 30%;
+    margin-top: 2.3em; }
+    .about-section__feature--left {
+      float: left;
+      margin-left: 15%;
+      margin-right: 5%; }
+    .about-section__feature--right {
+      margin-left: 5%; }
+  .about-section__header {
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin-bottom: 0.2em; }
+    .about-section__header--no-bold {
+      font-weight: normal; }
+  .about-section__content {
+    line-height: 1.5em;
+    margin-bottom: 1.8em; }
+
 /*# sourceMappingURL=style.css.map */

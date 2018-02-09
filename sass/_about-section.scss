@@ -1,0 +1,51 @@
+.about-section {
+    font-family: 'Barlow Condensed', sans-serif;
+    float: left;
+    color: white;
+    
+    &__image {
+        position: absolute;
+        width: 100%;
+        
+        &--left {
+            left: 0;
+            z-index: -1;
+        }
+        
+        &--right {
+            left: 0;
+            z-index: -2;
+        }
+    }
+    
+    &__feature {
+        display: inline-block;
+        width: 30%;
+        margin-top: 2.3em;
+        
+        &--left {
+            float: left;
+            margin-left: 15%;
+            margin-right: 5%;
+        }
+        
+        &--right {
+            margin-left: 5%;
+        }
+    }
+    
+    &__header {
+        letter-spacing: 1px;
+        font-size: 3em;
+        margin-bottom: 0.2em;
+        
+        &--no-bold {
+            font-weight: normal;
+        }
+    }
+    
+    &__content {
+        line-height: 1.5em;
+        margin-bottom: 1.8em;
+    }
+}
