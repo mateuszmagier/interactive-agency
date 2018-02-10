@@ -17,17 +17,6 @@
     letter-spacing: 1px;
     color: #7d7d7d; }
 
-.btn {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-image: -moz-linear-gradient(16deg, #49007c 0%, #e70088 100%);
-  background-image: -webkit-linear-gradient(16deg, #49007c 0%, #e70088 100%);
-  background-image: -ms-linear-gradient(16deg, #49007c 0%, #e70088 100%);
-  padding: 10px 40px;
-  border-radius: 20px;
-  letter-spacing: 1px; }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -60,13 +49,10 @@
     color: white;
     margin-top: 3px; }
 
-.container {
-  padding: 0 15%; }
-
 .about-section {
   font-family: 'Barlow Condensed', sans-serif;
-  float: left;
-  color: white; }
+  color: white;
+  padding-bottom: 80px; }
   .about-section__image {
     position: absolute;
     width: 100%; }
@@ -77,15 +63,7 @@
       left: 0;
       z-index: -2; }
   .about-section__feature {
-    display: inline-block;
-    width: 30%;
     margin-top: 2.3em; }
-    .about-section__feature--left {
-      float: left;
-      margin-left: 15%;
-      margin-right: 5%; }
-    .about-section__feature--right {
-      margin-left: 5%; }
   .about-section__header {
     letter-spacing: 1px;
     font-size: 3em;
@@ -93,7 +71,38 @@
     .about-section__header--no-bold {
       font-weight: normal; }
   .about-section__content {
-    line-height: 1.5em;
+    line-height: 1.7em;
     margin-bottom: 1.8em; }
+
+.offer-section {
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-top: 10px; }
+  .offer-section__section-header {
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 1px; }
+
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-image: -moz-linear-gradient(16deg, #49007c 0%, #e70088 100%);
+  background-image: -webkit-linear-gradient(16deg, #49007c 0%, #e70088 100%);
+  background-image: -ms-linear-gradient(16deg, #49007c 0%, #e70088 100%);
+  padding: 10px 40px;
+  border-radius: 20px;
+  letter-spacing: 1px; }
+
+.row {
+  width: 70%;
+  margin-left: 15%; }
+  .row__item {
+    display: inline-block;
+    width: 42.857%; }
+    .row__item--left {
+      float: left;
+      margin-right: 7.14283%; }
+    .row__item--right {
+      margin-left: 7.14283%; }
 
 /*# sourceMappingURL=style.css.map */

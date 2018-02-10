@@ -1,7 +1,7 @@
 .about-section {
     font-family: 'Barlow Condensed', sans-serif;
-    float: left;
     color: white;
+    padding-bottom: 80px;
     
     &__image {
         position: absolute;
@@ -19,19 +19,7 @@
     }
     
     &__feature {
-        display: inline-block;
-        width: 30%;
         margin-top: 2.3em;
-        
-        &--left {
-            float: left;
-            margin-left: 15%;
-            margin-right: 5%;
-        }
-        
-        &--right {
-            margin-left: 5%;
-        }
     }
     
     &__header {
@@ -45,7 +33,7 @@
     }
     
     &__content {
-        line-height: 1.5em;
+        line-height: 1.7em;
         margin-bottom: 1.8em;
     }
 }
