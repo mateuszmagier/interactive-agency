@@ -76,11 +76,37 @@
 
 .offer-section {
   font-family: 'Barlow Condensed', sans-serif;
-  padding-top: 10px; }
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-align: center; }
   .offer-section__section-header {
     font-size: 2.5em;
     text-align: center;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+  .offer-section__image {
+    width: 25%;
+    margin-top: 10px;
+    float: left; }
+  .offer-section__offer {
+    width: 100%;
+    text-align: left; }
+  .offer-section__offer-header {
+    font-size: 1.5em;
+    margin: 0; }
+  .offer-section__offer-details {
+    width: 65%;
+    margin-left: 10%;
+    float: right; }
+  .offer-section__offer-desc {
+    color: #7d7d7d;
+    line-height: 1.7em; }
+
+.btn--offer {
+  margin-top: 60px; }
+
+.row--offer {
+  margin-top: 50px; }
 
 .btn {
   display: inline-block;

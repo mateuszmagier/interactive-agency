@@ -1,10 +1,53 @@
 .offer-section {
     font-family: 'Barlow Condensed', sans-serif;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
     
     &__section-header {
         font-size: 2.5em;
         text-align: center;
         letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    
+    &__image {
+        width: 25%;
+        margin-top: 10px;
+        float: left;
+    }
+    
+    &__offer {
+        width: 100%;
+        text-align: left;
+        //letter-spacing: 1px;
+    }
+    
+    &__offer-header {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    &__offer-details {
+        width: 65%;
+        margin-left: 10%;
+        float: right;
+    }
+    
+    &__offer-desc {
+        color: #7d7d7d;
+        line-height: 1.7em;
+    }
+}
+
+.btn {
+    &--offer {
+        margin-top: 60px;
+    }
+}
+
+.row {
+    &--offer {
+        margin-top: 50px;
     }
 }
