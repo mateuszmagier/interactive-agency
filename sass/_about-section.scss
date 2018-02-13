@@ -1,38 +1,49 @@
 .about-section {
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
-    padding-bottom: 80px;
-    
+
     &__image {
-        position: absolute;
         width: 100%;
-        
-        &--left {
-            left: 0;
-            z-index: -1;
-        }
-        
-        &--right {
-            left: 0;
-            z-index: -2;
-        }
+        z-index: -1;
     }
-    
+
     &__feature {
-        margin-top: 2.3em;
+        display: inline-block;
+        width: 50%;
+        position: relative;
+
+        &--left {
+            float: left;
+        }
     }
-    
-    &__header {
+
+    &__feature-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60%;
+
+        &--left {
+            margin-left: 30%;
+        }
+
+        &--right {
+            margin-left: 10%;
+        }
+    }
+
+    &__feature-header {
         letter-spacing: 1px;
         font-size: 3em;
+        margin-top: 0;
         margin-bottom: 0.2em;
-        
+
         &--no-bold {
             font-weight: normal;
         }
     }
-    
-    &__content {
+
+    &__feature-desc {
         line-height: 1.7em;
         margin-bottom: 1.8em;
     }
