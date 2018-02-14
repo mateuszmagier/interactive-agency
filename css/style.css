@@ -115,6 +115,46 @@
 .row--offer {
   margin-top: 50px; }
 
+.portfolio-section {
+  width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  color: white; }
+
+.project {
+  display: inline-block;
+  width: 33.33333%;
+  float: left;
+  position: relative;
+  line-height: 0; }
+  .project__name {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    line-height: normal;
+    margin: 0; }
+  .project__image {
+    width: 100%; }
+  .project__details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    line-height: normal; }
+    .project__details--visible {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .project__details-container {
+    width: 70%;
+    margin: 0 auto; }
+  .project__desc {
+    letter-spacing: 1px;
+    line-height: normal;
+    margin-bottom: 50px;
+    margin-top: 15px; }
+
 .btn {
   display: inline-block;
   color: white;
