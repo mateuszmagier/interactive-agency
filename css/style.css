@@ -179,6 +179,38 @@
     margin-bottom: 50px;
     margin-top: 15px; }
 
+.team-section {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  background-image: url(../img/people-bg.png);
+  background-size: cover; }
+  .team-section__section-header {
+    font-size: 2.5em;
+    margin: 0;
+    padding-bottom: 20px; }
+  .team-section__section-subheader {
+    margin: 0;
+    width: 40%;
+    margin-left: 30%;
+    line-height: 1.5em; }
+  .team-section__people {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: 65%;
+    margin-left: 17.5%;
+    display: flex; }
+  .team-section__person-image {
+    width: 120px; }
+  .team-section__person-name {
+    font-size: 1.5em; }
+  .team-section__person-desc {
+    line-height: 1.5em; }
+
 .btn {
   display: inline-block;
   color: white;

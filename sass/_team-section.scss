@@ -1,0 +1,49 @@
+.team-section {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    //background-color: black;
+    background-image: url(../img/people-bg.png);
+    background-size: cover;
+
+    &__section-header {
+        font-size: 2.5em;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    &__section-subheader {
+        margin: 0;
+        width: 40%;
+        margin-left: 30%;
+        line-height: 1.5em;
+    }
+
+    &__people {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        width: 65%;
+        margin-left: 17.5%;
+        display: flex;
+    }
+
+    &__person {
+
+    }
+
+    &__person-image {
+        width: 120px;
+    }
+
+    &__person-name {
+        font-size: 1.5em;
+    }
+    
+    &__person-desc {
+        line-height: 1.5em;
+    }
+}
