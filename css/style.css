@@ -141,7 +141,8 @@
     display: inline-block;
     background-color: white;
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    cursor: pointer; }
     .portfolio-section__arrow span {
       position: relative;
       top: -8px; }
@@ -170,7 +171,8 @@
     .project__details--visible {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      z-index: 2; }
   .project__details-container {
     width: 70%;
     margin: 0 auto; }
@@ -206,7 +208,8 @@
     margin-left: 17.5%;
     display: flex; }
   .team-section__person-image {
-    width: 120px; }
+    width: 120px;
+    border-width: 0px; }
   .team-section__person-name {
     font-size: 1.5em; }
   .team-section__person-desc {
