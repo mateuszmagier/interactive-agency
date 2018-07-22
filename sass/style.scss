@@ -3,6 +3,7 @@
 @import 'offer-section';
 @import 'portfolio-section';
 @import 'team-section';
+@import 'map-section';
 
 .btn {
     display: inline-block;
@@ -14,6 +15,7 @@
     padding: 10px 40px;
     border-radius: 20px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .row {
