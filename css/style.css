@@ -235,6 +235,17 @@
 #map {
   height: 100%; }
 
+.footer-section {
+  width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  color: #b2b2b2;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  padding-top: 35px; }
+  .footer-section__footer {
+    padding-bottom: 15px; }
+
 body {
   height: 100%;
   width: 100%; }
