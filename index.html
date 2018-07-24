@@ -3,15 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Interactive Agency</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400,700" rel="stylesheet">
     <link rel=stylesheet href="css/normalize.css">
     <link rel=stylesheet href="css/style.css">
+    <script src="js/map.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6TqlxjvgWVVx32IC1E5G_QQHlv4Cf6Fs&callback=initMap" async defer></script>
     <!--
     <script src="js/map.js" async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtpLig-isA1a0SETJl2fLIjmSMvZCYhfM&callback=initMap" async defer></script>
 -->
     <script src="js/script.js"></script>
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -206,21 +225,23 @@
         <div id="map"></div>
     </section>
 
+<!--
     <script>
-        var map;
+        let map;
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {
-                    lat: -34.397,
-                    lng: 150.644
+                    lat: 40.71427,
+                    lng: -74.00597
                 },
                 zoom: 8
             });
         }
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6TqlxjvgWVVx32IC1E5G_QQHlv4Cf6Fs&callback=initMap" async defer></script>
+-->
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6TqlxjvgWVVx32IC1E5G_QQHlv4Cf6Fs&callback=initMap" async defer></script>-->
 </body>
 
 </html>

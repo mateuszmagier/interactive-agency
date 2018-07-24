@@ -45,16 +45,14 @@
     float: left;
     position: relative;
     line-height: 0;
-//    transition: all .3s ease-in;
+    overflow: hidden;
 
     &--reserve-left {
-        position: absolute;
-        transform: translateX(-100%); //        left: -33.33333%;
+        position: absolute; //        transform: translateX(-100%);
     }
 
     &--reserve-right {
-        position: absolute;
-        transform: translateX(100%); //        right: -33.33333%;
+        position: absolute; //        transform: translateX(100%);
     }
 
     &__name {
@@ -74,16 +72,8 @@
         height: 100%;
         top: 0;
         background-color: rgba(0, 0, 0, 0.7);
-        opacity: 0;
+        transform: translateY(-100%);
         line-height: normal;
-
-        &--visible {
-            opacity: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-        }
     }
 
     &__details-container {
@@ -100,7 +90,8 @@
 }
 
 .project--middle .project__details {
-    opacity: 1;
+    transform: translateY(0);
+    transition: transform .3s ease-out;
     display: flex;
     justify-content: center;
     align-items: center;
