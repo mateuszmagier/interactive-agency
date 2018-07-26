@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentProjectsPosition = 0; // bieżące przesunięcie projektów w sekcji portfolio
     let middleProject;
     let isLastMoveRight;
+    let menu, menuList;
 
     function deleteRedundantProject() {
         console.log("deleteRedundantProject");
@@ -86,6 +87,16 @@ document.addEventListener("DOMContentLoaded", function () {
         let portfolioSection = document.querySelector(".portfolio-section");
         portfolioSection.appendChild(arrowsContainer);
     }
+    
+    function toggleMenuEvent() {
+        let toggleMenu = document.querySelector(".toggle-menu");
+        toggleMenu.addEventListener("click", function() {
+            this.classList.toggle("toggle-menu--closed");
+            menuList.classList.toggle("menu__list--visible");
+        });
+    }
 
     addNavArrows();
+    menuList = document.querySelector(".menu__list");
+    toggleMenuEvent();
 });
