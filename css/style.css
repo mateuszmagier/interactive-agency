@@ -184,27 +184,67 @@
     display: inline-block;
     width: 50%;
     position: relative; }
+    @media only screen and (max-width: 600px) {
+      .about-section__feature {
+        display: block;
+        width: 100%; } }
     .about-section__feature--left {
       float: left; }
+      @media only screen and (max-width: 600px) {
+        .about-section__feature--left {
+          float: none; } }
   .about-section__feature-content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 60%; }
+    @media only screen and (max-width: 600px) {
+      .about-section__feature-content {
+        text-align: center; } }
+    @media only screen and (max-width: 400px) {
+      .about-section__feature-content .btn {
+        display: none; } }
+    @media only screen and (min-width: 401px) and (max-width: 600px) {
+      .about-section__feature-content .btn {
+        padding: 8px 20px; } }
     .about-section__feature-content--left {
       margin-left: 30%; }
+      @media only screen and (max-width: 600px) {
+        .about-section__feature-content--left {
+          width: 90%;
+          margin-left: 5%; } }
     .about-section__feature-content--right {
       margin-left: 10%; }
+      @media only screen and (max-width: 600px) {
+        .about-section__feature-content--right {
+          width: 90%;
+          margin-left: 5%; } }
   .about-section__feature-header {
     letter-spacing: 1px;
     font-size: 3em;
     margin-top: 0;
     margin-bottom: 0.2em; }
+    @media only screen and (min-width: 401px) and (max-width: 600px) {
+      .about-section__feature-header {
+        font-size: 2em; } }
+    @media only screen and (max-width: 400px) {
+      .about-section__feature-header {
+        font-size: 1.7em; } }
     .about-section__feature-header--no-bold {
       font-weight: normal; }
   .about-section__feature-desc {
     line-height: 1.7em;
     margin-bottom: 1.8em; }
+    @media only screen and (min-width: 401px) and (max-width: 600px) {
+      .about-section__feature-desc {
+        line-height: 1.5em;
+        margin-bottom: 0.8em; } }
+    @media only screen and (max-width: 400px) {
+      .about-section__feature-desc {
+        line-height: 1.5em;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+        font-size: 0.9em; } }
 
 .offer-section {
   font-family: 'Barlow Condensed', sans-serif;

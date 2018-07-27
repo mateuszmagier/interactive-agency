@@ -12,8 +12,17 @@
         width: 50%;
         position: relative;
 
+        @media only screen and (max-width: 600px) {
+            display: block;
+            width: 100%;
+        }
+
         &--left {
             float: left;
+
+            @media only screen and (max-width: 600px) {
+                float: none;
+            }
         }
     }
 
@@ -23,12 +32,41 @@
         transform: translateY(-50%);
         width: 60%;
 
+        @media only screen and (max-width: 600px) {
+//            transform: none;
+            text-align: center;
+        }
+
+        .btn {
+            @media only screen and (max-width: 400px) {
+                display: none;
+            }
+
+            @media only screen and (min-width: 401px) and (max-width: 600px) {
+                padding: 8px 20px;
+            }
+        }
+
         &--left {
             margin-left: 30%;
+
+            @media only screen and (max-width: 600px) {
+                width: 90%;
+                margin-left: 5%;
+            }
         }
+
+
 
         &--right {
             margin-left: 10%;
+
+            @media only screen and (min-width: 300px) and (max-width: 600px) {}
+
+            @media only screen and (max-width: 600px) {
+                width: 90%;
+                margin-left: 5%;
+            }
         }
     }
 
@@ -38,6 +76,14 @@
         margin-top: 0;
         margin-bottom: 0.2em;
 
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            font-size: 2em;
+        }
+        
+        @media only screen and (max-width: 400px) {
+            font-size: 1.7em;
+        }
+
         &--no-bold {
             font-weight: normal;
         }
@@ -46,5 +92,18 @@
     &__feature-desc {
         line-height: 1.7em;
         margin-bottom: 1.8em;
+
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            line-height: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        
+        @media only screen and (max-width: 400px) {
+            line-height: 1.5em;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+        }
     }
+
 }
