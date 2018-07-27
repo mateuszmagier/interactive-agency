@@ -6,6 +6,11 @@
 @import 'map-section';
 @import 'footer-section';
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     height: 100%;
@@ -27,9 +32,6 @@ body {
 }
 
 .row {
-//    width: 70%;
-//    margin-left: 15%;
-
     /* 901 - 1200 */
     @media only screen and (min-width: 901px) and (max-width: 1200px) {
         width: 90%;

@@ -8,13 +8,30 @@
 
     &__content {
         text-align: center;
+        margin-top: -60px;
+
+        /* 601 - 900 */
+        @media only screen and (min-width: 601px) and (max-width: 900px) {
+            padding-top: 60px;
+            margin-top: 0;
+        }
+        
+        /* > 900 */
+    @media only screen and (min-width: 901px) {
         padding-top: 150px;
+        margin-top: 0;
+    }
     }
 
     &__header {
         margin: 0;
-        font-size: 3em;
+        font-size: 2.3em;
         letter-spacing: 1px;
+        
+        /* > 600 */
+        @media only screen and (min-width: 601px) {
+            font-size: 3em;
+        }
     }
 
     &__subheader {
@@ -129,6 +146,11 @@
     text-align: center;
     overflow: hidden;
 
+    /* 601 - 900 */
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+        padding-top: 10px;
+    }
+
     &__list {
         list-style: none;
         padding-left: 0;
@@ -195,14 +217,20 @@
 .scroll-down {
     text-align: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 0;
     right: 0;
+
+    /* > 900 */
+    @media only screen and (min-width: 901px) {
+        bottom: 20px;
+    }
 
     &__mouse-img {}
 
     &__content {
         color: white;
         margin-top: 3px;
+        bottom: 10px;
     }
 }
