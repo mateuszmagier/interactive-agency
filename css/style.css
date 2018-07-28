@@ -283,18 +283,40 @@
   padding-top: 20px;
   padding-bottom: 80px;
   text-align: center; }
+  @media only screen and (max-width: 600px) {
+    .offer-section {
+      padding-bottom: 50px; } }
   .offer-section__section-header {
     font-size: 2.5em;
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 750px) {
+      .offer-section__section-header {
+        margin-bottom: 40px;
+        font-size: 2em; } }
   .offer-section__image {
     width: 25%;
     margin-top: 10px;
     float: left; }
+    @media only screen and (min-width: 751px) and (max-width: 900px) {
+      .offer-section__image {
+        width: 30%; } }
+    @media only screen and (min-width: 601px) and (max-width: 750px) {
+      .offer-section__image {
+        width: 40%;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 15px; } }
   .offer-section__offer {
     width: 100%;
     text-align: left; }
+    @media only screen and (min-width: 601px) and (max-width: 750px) {
+      .offer-section__offer {
+        text-align: center; } }
   .offer-section__offer-header {
     font-size: 1.5em;
     margin: 0; }
@@ -302,15 +324,69 @@
     width: 65%;
     margin-left: 10%;
     float: right; }
+    @media only screen and (min-width: 751px) and (max-width: 900px) {
+      .offer-section__offer-details {
+        width: 60%; } }
+    @media only screen and (min-width: 601px) and (max-width: 750px) {
+      .offer-section__offer-details {
+        clear: both;
+        margin-left: 0;
+        width: 100%; } }
   .offer-section__offer-desc {
     color: #7d7d7d;
     line-height: 1.7em; }
+  .offer-section .clear {
+    clear: both; }
 
 .btn--offer {
   margin-top: 60px; }
+  @media only screen and (max-width: 600px) {
+    .btn--offer {
+      margin-top: 20px; } }
 
 .row--offer {
   margin-top: 50px; }
+  @media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .row--offer {
+      width: 84%;
+      margin-left: 12%; } }
+  @media only screen and (min-width: 601px) and (max-width: 750px) {
+    .row--offer {
+      margin-top: 30px; } }
+  @media only screen and (max-width: 600px) {
+    .row--offer {
+      width: 70%;
+      margin-top: 0;
+      margin-left: 15%; } }
+.row__item {
+  display: inline-block;
+  width: 42.857%; }
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .row__item {
+      width: 46%; } }
+  @media only screen and (max-width: 600px) {
+    .row__item {
+      display: block;
+      width: auto;
+      margin-bottom: 30px; } }
+  .row__item--left {
+    float: left;
+    margin-right: 7.14283%; }
+    @media only screen and (min-width: 601px) and (max-width: 1200px) {
+      .row__item--left {
+        margin-right: 2%;
+        float: none; } }
+    @media only screen and (max-width: 600px) {
+      .row__item--left {
+        margin-right: 0; } }
+  .row__item--right {
+    margin-left: 7.14283%; }
+    @media only screen and (min-width: 601px) and (max-width: 1200px) {
+      .row__item--right {
+        margin-left: 2%; } }
+    @media only screen and (max-width: 600px) {
+      .row__item--right {
+        margin-left: 0; } }
 
 .portfolio-section {
   width: 100%;
@@ -461,9 +537,9 @@ body {
   cursor: pointer; }
 
 .row {
-  /* 901 - 1200 */
+  /* 601 - 1200 */
   /* > 1200 */ }
-  @media only screen and (min-width: 901px) and (max-width: 1200px) {
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
     .row {
       width: 90%;
       margin-left: 5%; } }
@@ -471,13 +547,5 @@ body {
     .row {
       width: 70%;
       margin-left: 15%; } }
-  .row__item {
-    display: inline-block;
-    width: 42.857%; }
-    .row__item--left {
-      float: left;
-      margin-right: 7.14283%; }
-    .row__item--right {
-      margin-left: 7.14283%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,8 +32,8 @@ body {
 }
 
 .row {
-    /* 901 - 1200 */
-    @media only screen and (min-width: 901px) and (max-width: 1200px) {
+    /* 601 - 1200 */
+    @media only screen and (min-width: 601px) and (max-width: 1200px) {
         width: 90%;
         margin-left: 5%;
     }
@@ -43,17 +43,4 @@ body {
         margin-left: 15%;
     }
 
-    &__item {
-        display: inline-block;
-        width: 42.857%;
-
-        &--left {
-            float: left;
-            margin-right: 7.14283%;
-        }
-
-        &--right {
-            margin-left: 7.14283%;
-        }
-    }
 }
