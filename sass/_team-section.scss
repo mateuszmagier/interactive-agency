@@ -13,6 +13,10 @@
         font-size: 2.5em;
         margin: 0;
         padding-bottom: 20px;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 2em;
+        }
     }
 
     &__section-subheader {
@@ -20,6 +24,11 @@
         width: 40%;
         margin-left: 30%;
         line-height: 1.5em;
+
+        @media only screen and (max-width: 900px) {
+            width: 70%;
+            margin-left: 15%;
+        }
     }
 
     &__people {
@@ -28,20 +37,103 @@
         width: 65%;
         margin-left: 17.5%;
         display: flex;
+
+        &--wrapper {
+            display: inline-flex;
+
+            @media only screen and (max-width: 600px) {
+                flex-wrap: wrap;
+            }
+
+            .team-section__person:first-child {
+                @media only screen and (min-width: 601px) and (max-width: 900px) {
+                    margin-left: 0;
+                    margin-right: 2%;
+                }
+            }
+
+            .team-section__person:last-child {
+                @media only screen and (min-width: 601px) and (max-width: 900px) {
+                    margin-left: 2%;
+                    margin-right: 0;
+                }
+            }
+
+            &:first-child {
+                .team-section__person:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            &:last-child {
+
+                @media only screen and (min-width: 601px) and (max-width: 900px) {
+                    margin-top: 70px;
+                }
+
+                .team-section__person:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: 900px) {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        @media only screen and (min-width: 901px) and (max-width: 1200px) {
+            width: 90%;
+            margin-left: 5%;
+        }
     }
 
-    &__person {}
+    &__person {
+        margin-left: 1%;
+        margin-right: 1%;
+
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            display: inline-flex;
+            margin-bottom: 40px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__person-info {
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 5%;
+            text-align: left;
+        }
+    }
 
     &__person-image {
         width: 120px;
-        border-width: 0px;
+        height: 120px;
     }
 
     &__person-name {
         font-size: 1.5em;
+
+        @media only screen and (max-width: 400px) {
+            font-size: 1.3em;
+        }
     }
 
     &__person-desc {
         line-height: 1.5em;
+
+        @media only screen and (max-width: 400px) {
+            line-height: 1.3em;
+        }
     }
 }
