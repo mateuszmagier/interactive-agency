@@ -416,9 +416,25 @@
     width: 50px;
     height: 50px;
     cursor: pointer; }
+    @media only screen and (min-width: 401px) and (max-width: 600px) {
+      .portfolio-section__arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 2.5em; } }
+    @media only screen and (max-width: 400px) {
+      .portfolio-section__arrow {
+        width: 28px;
+        height: 35px;
+        font-size: 2.3em; } }
     .portfolio-section__arrow span {
       position: relative;
       top: -8px; }
+      @media only screen and (min-width: 401px) and (max-width: 600px) {
+        .portfolio-section__arrow span {
+          top: -11px; } }
+      @media only screen and (max-width: 400px) {
+        .portfolio-section__arrow span {
+          top: -9px; } }
 
 .project {
   display: inline-block;
@@ -427,6 +443,40 @@
   position: relative;
   line-height: 0;
   overflow: hidden; }
+  @media only screen and (max-width: 700px) {
+    .project {
+      width: 80%;
+      transform: translateX(12.5%);
+      z-index: 2; } }
+  @media only screen and (min-width: 701px) and (max-width: 900px) {
+    .project {
+      width: 50%;
+      transform: translateX(50%);
+      z-index: 2; } }
+  @media only screen and (max-width: 700px) {
+    .project:first-child {
+      position: absolute;
+      transform: none;
+      left: -35%;
+      z-index: 0; } }
+  @media only screen and (min-width: 701px) and (max-width: 900px) {
+    .project:first-child {
+      position: absolute;
+      transform: none;
+      left: -12.5%;
+      z-index: 0; } }
+  @media only screen and (max-width: 700px) {
+    .project:last-child {
+      position: absolute;
+      right: -35%;
+      transform: none;
+      z-index: 0; } }
+  @media only screen and (min-width: 701px) and (max-width: 900px) {
+    .project:last-child {
+      position: absolute;
+      transform: none;
+      right: -12.5%;
+      z-index: 0; } }
   .project--reserve-left {
     position: absolute; }
   .project--reserve-right {
@@ -449,11 +499,22 @@
   .project__details-container {
     width: 70%;
     margin: 0 auto; }
+    @media only screen and (max-width: 400px) {
+      .project__details-container {
+        width: 80%; } }
   .project__desc {
     letter-spacing: 1px;
     line-height: normal;
     margin-bottom: 50px;
     margin-top: 15px; }
+    @media only screen and (min-width: 401px) and (max-width: 1200px) {
+      .project__desc {
+        margin-bottom: 20px;
+        margin-top: 5px; } }
+    @media only screen and (max-width: 400px) {
+      .project__desc {
+        margin-top: 5px;
+        margin-bottom: 10px; } }
 
 .project--middle .project__details {
   transform: translateY(0);
@@ -462,6 +523,10 @@
   justify-content: center;
   align-items: center;
   z-index: 2; }
+
+@media only screen and (max-width: 400px) {
+  .project--middle .btn {
+    padding: 6px 20px; } }
 
 .team-section {
   width: 100%;

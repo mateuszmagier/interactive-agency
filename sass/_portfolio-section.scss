@@ -32,9 +32,29 @@
         height: 50px;
         cursor: pointer;
 
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            width: 35px;
+            height: 35px;
+            font-size: 2.5em;
+        }
+
+        @media only screen and (max-width: 400px) {
+            width: 28px;
+            height: 35px;
+            font-size: 2.3em;
+        }
+
         span {
             position: relative;
             top: -8px;
+
+            @media only screen and (min-width: 401px) and (max-width: 600px) {
+                top: -11px;
+            }
+
+            @media only screen and (max-width: 400px) {
+                top: -9px;
+            }
         }
     }
 }
@@ -46,6 +66,52 @@
     position: relative;
     line-height: 0;
     overflow: hidden;
+
+    @media only screen and (max-width: 700px) {
+        width: 80%;
+        transform: translateX(12.5%);
+        z-index: 2;
+    }
+
+    @media only screen and (min-width: 701px) and (max-width: 900px) {
+        width: 50%;
+        transform: translateX(50%);
+        z-index: 2;
+    }
+
+    &:first-child {
+
+        @media only screen and (max-width: 700px) {
+            position: absolute;
+            transform: none;
+            left: -35%;
+            z-index: 0;
+        }
+
+        @media only screen and (min-width: 701px) and (max-width: 900px) {
+            position: absolute;
+            transform: none;
+            left: -12.5%;
+            z-index: 0;
+        }
+    }
+
+    &:last-child {
+
+        @media only screen and (max-width: 700px) {
+            position: absolute;
+            right: -35%;
+            transform: none;
+            z-index: 0;
+        }
+
+        @media only screen and (min-width: 701px) and (max-width: 900px) {
+            position: absolute;
+            transform: none;
+            right: -12.5%;
+            z-index: 0;
+        }
+    }
 
     &--reserve-left {
         position: absolute;
@@ -79,6 +145,10 @@
     &__details-container {
         width: 70%;
         margin: 0 auto;
+
+        @media only screen and (max-width: 400px) {
+            width: 80%;
+        }
     }
 
     &__desc {
@@ -86,6 +156,16 @@
         line-height: normal;
         margin-bottom: 50px;
         margin-top: 15px;
+
+        @media only screen and (min-width: 401px) and (max-width: 1200px) {
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -96,4 +176,10 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+}
+
+.project--middle .btn {
+    @media only screen and (max-width: 400px) {
+        padding: 6px 20px;
+    }
 }
