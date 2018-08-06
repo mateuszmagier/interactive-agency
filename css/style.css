@@ -336,9 +336,6 @@
 
 .btn--offer {
   margin-top: 60px; }
-  @media only screen and (max-width: 600px) {
-    .btn--offer {
-      margin-top: 20px; } }
 
 .row--offer {
   margin-top: 50px; }
