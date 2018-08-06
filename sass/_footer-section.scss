@@ -7,12 +7,16 @@
     padding-bottom: 20px;
     padding-top: 35px;
 
+    @media only screen and (min-width: 1601px) {
+        font-size: 1.2em;
+    }
+
     &__footer {
         padding-bottom: 15px;
         padding-left: 10%;
         padding-right: 10%;
     }
-    
+
     &__credits {
         padding-left: 10%;
         padding-right: 10%;

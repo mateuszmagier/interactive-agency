@@ -126,6 +126,11 @@
         letter-spacing: 1px;
         line-height: normal;
         margin: 0;
+        
+        @media only screen and (min-width: 1601px) {
+            font-size: 2.1em;
+        }
+
     }
 
     &__image {
@@ -156,6 +161,12 @@
         line-height: normal;
         margin-bottom: 50px;
         margin-top: 15px;
+        
+        @media only screen and (min-width: 1601px) {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
 
         @media only screen and (min-width: 401px) and (max-width: 1200px) {
             margin-bottom: 20px;

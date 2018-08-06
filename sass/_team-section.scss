@@ -17,6 +17,10 @@
         @media only screen and (max-width: 600px) {
             font-size: 2em;
         }
+
+        @media only screen and (min-width: 1601px) {
+            font-size: 3.5em;
+        }
     }
 
     &__section-subheader {
@@ -28,6 +32,10 @@
         @media only screen and (max-width: 900px) {
             width: 70%;
             margin-left: 15%;
+        }
+
+        @media only screen and (min-width: 1601px) {
+            font-size: 1.3em;
         }
     }
 
@@ -114,7 +122,7 @@
             margin-left: 5%;
             text-align: left;
         }
-        
+
         @media only screen and (max-width: 400px) {
             margin-top: 15px;
             text-align: center;
@@ -124,6 +132,11 @@
     &__person-image {
         width: 120px;
         height: 120px;
+
+        @media only screen and (min-width: 1601px) {
+            width: 130px;
+            height: 130px;
+        }
     }
 
     &__person-name {
@@ -132,6 +145,12 @@
         @media only screen and (max-width: 400px) {
             font-size: 1.3em;
         }
+
+        @media only screen and (min-width: 1601px) {
+            font-size: 2em;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
     }
 
     &__person-desc {
@@ -139,6 +158,10 @@
 
         @media only screen and (max-width: 400px) {
             line-height: 1.3em;
+        }
+
+        @media only screen and (min-width: 1601px) {
+            font-size: 1.2em;
         }
     }
 }

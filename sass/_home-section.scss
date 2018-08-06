@@ -5,6 +5,12 @@
     background-position: center;
     font-family: 'Barlow Condensed', sans-serif;
     position: relative;
+    padding-top: 15px;
+    box-sizing: border-box;
+    
+    @media only screen and (min-width: 1601px) {
+        padding-top: 30px;
+    }
 
     &__content {
         text-align: center;
@@ -15,22 +21,26 @@
             padding-top: 60px;
             margin-top: 0;
         }
-        
+
         /* > 900 */
-    @media only screen and (min-width: 901px) {
-        padding-top: 150px;
-        margin-top: 0;
-    }
+        @media only screen and (min-width: 901px) {
+            padding-top: 150px;
+            margin-top: 0;
+        }
     }
 
     &__header {
         margin: 0;
         font-size: 2.3em;
         letter-spacing: 1px;
-        
+
         /* > 600 */
-        @media only screen and (min-width: 601px) {
+        @media only screen and (min-width: 601px) and (max-width: 1600px) {
             font-size: 3em;
+        }
+        
+        @media only screen and (min-width: 1601px) {
+            font-size: 3.8em;
         }
     }
 
@@ -39,6 +49,11 @@
         margin-bottom: 40px;
         letter-spacing: 1px;
         color: #7d7d7d;
+        
+        @media only screen and (min-width: 1601px) {
+            font-size: 1.35em;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -101,7 +116,6 @@
 .header {
     position: relative;
     display: block;
-    top: 15px;
 
     /* > 900 */
     @media only screen and (min-width: 901px) {
@@ -195,9 +209,16 @@
         display: block;
         width: 100%;
         padding: 7px;
+        
+        @media only screen and (min-width: 1601px) {
+            font-size: 1.4em;
+            padding: 7px 30px;
+            display: inline;
+            color: black;
+        }
 
         /* > 600 */
-        @media only screen and (min-width: 601px) {
+        @media only screen and (min-width: 601px) and (max-width: 1600px) {
             display: inline;
             color: black;
             padding: 7px 20px;
@@ -226,11 +247,10 @@
         bottom: 20px;
     }
 
-    &__mouse-img {}
-
     &__content {
         color: white;
         margin-top: 3px;
         bottom: 10px;
+        font-size: 1.1em;
     }
 }

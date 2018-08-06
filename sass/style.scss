@@ -29,6 +29,12 @@ body {
     border-radius: 20px;
     letter-spacing: 1px;
     cursor: pointer;
+    
+    @media only screen and (min-width: 1601px) {
+        font-size: 1.1em;
+        padding: 10px 50px;
+        border-radius: 25px;
+    }
 }
 
 .row {

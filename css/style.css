@@ -4,7 +4,12 @@
   background-size: cover;
   background-position: center;
   font-family: 'Barlow Condensed', sans-serif;
-  position: relative; }
+  position: relative;
+  padding-top: 15px;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 1601px) {
+    .home-section {
+      padding-top: 30px; } }
   .home-section__content {
     text-align: center;
     margin-top: -60px;
@@ -23,14 +28,21 @@
     font-size: 2.3em;
     letter-spacing: 1px;
     /* > 600 */ }
-    @media only screen and (min-width: 601px) {
+    @media only screen and (min-width: 601px) and (max-width: 1600px) {
       .home-section__header {
         font-size: 3em; } }
+    @media only screen and (min-width: 1601px) {
+      .home-section__header {
+        font-size: 3.8em; } }
   .home-section__subheader {
     margin-top: 5px;
     margin-bottom: 40px;
     letter-spacing: 1px;
     color: #7d7d7d; }
+    @media only screen and (min-width: 1601px) {
+      .home-section__subheader {
+        font-size: 1.35em;
+        margin-top: 10px; } }
 
 .toggle-menu {
   position: absolute;
@@ -76,7 +88,6 @@
 .header {
   position: relative;
   display: block;
-  top: 15px;
   /* > 900 */ }
   @media only screen and (min-width: 901px) {
     .header {
@@ -147,7 +158,13 @@
     width: 100%;
     padding: 7px;
     /* > 600 */ }
-    @media only screen and (min-width: 601px) {
+    @media only screen and (min-width: 1601px) {
+      .menu__link {
+        font-size: 1.4em;
+        padding: 7px 30px;
+        display: inline;
+        color: black; } }
+    @media only screen and (min-width: 601px) and (max-width: 1600px) {
       .menu__link {
         display: inline;
         color: black;
@@ -172,7 +189,8 @@
   .scroll-down__content {
     color: white;
     margin-top: 3px;
-    bottom: 10px; }
+    bottom: 10px;
+    font-size: 1.1em; }
 
 .about-section {
   font-family: 'Barlow Condensed', sans-serif;
@@ -243,6 +261,9 @@
     font-size: 3em;
     margin-top: 0;
     margin-bottom: 0.2em; }
+    @media only screen and (min-width: 1601px) {
+      .about-section__feature-header {
+        font-size: 3.5em; } }
     @media only screen and (min-width: 601px) and (max-width: 1200px) {
       .about-section__feature-header {
         font-size: 2.5em; } }
@@ -264,6 +285,9 @@
       .about-section__feature-desc {
         margin-bottom: 0.5em;
         line-height: 1.5em; } }
+    @media only screen and (min-width: 1601px) {
+      .about-section__feature-desc {
+        font-size: 1.2em; } }
     @media only screen and (min-width: 401px) and (max-width: 700px) {
       .about-section__feature-desc {
         line-height: 1.5em;
@@ -291,6 +315,9 @@
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 20px; }
+    @media only screen and (min-width: 1601px) {
+      .offer-section__section-header {
+        font-size: 3.5em; } }
     @media only screen and (max-width: 750px) {
       .offer-section__section-header {
         margin-bottom: 40px;
@@ -319,10 +346,17 @@
   .offer-section__offer-header {
     font-size: 1.5em;
     margin: 0; }
+    @media only screen and (min-width: 1601px) {
+      .offer-section__offer-header {
+        font-size: 1.8em;
+        margin-bottom: 8px; } }
   .offer-section__offer-details {
     width: 65%;
     margin-left: 10%;
     float: right; }
+    @media only screen and (min-width: 1601px) {
+      .offer-section__offer-details {
+        font-size: 1.2em; } }
     @media only screen and (max-width: 750px) {
       .offer-section__offer-details {
         clear: both;
@@ -479,6 +513,9 @@
     letter-spacing: 1px;
     line-height: normal;
     margin: 0; }
+    @media only screen and (min-width: 1601px) {
+      .project__name {
+        font-size: 2.1em; } }
   .project__image {
     width: 100%; }
   .project__details {
@@ -500,6 +537,10 @@
     line-height: normal;
     margin-bottom: 50px;
     margin-top: 15px; }
+    @media only screen and (min-width: 1601px) {
+      .project__desc {
+        font-size: 1.2em;
+        line-height: 1.5em; } }
     @media only screen and (min-width: 401px) and (max-width: 1200px) {
       .project__desc {
         margin-bottom: 20px;
@@ -538,6 +579,9 @@
     @media only screen and (max-width: 600px) {
       .team-section__section-header {
         font-size: 2em; } }
+    @media only screen and (min-width: 1601px) {
+      .team-section__section-header {
+        font-size: 3.5em; } }
   .team-section__section-subheader {
     margin: 0;
     width: 40%;
@@ -547,6 +591,9 @@
       .team-section__section-subheader {
         width: 70%;
         margin-left: 15%; } }
+    @media only screen and (min-width: 1601px) {
+      .team-section__section-subheader {
+        font-size: 1.3em; } }
   .team-section__people {
     padding-top: 70px;
     padding-bottom: 50px;
@@ -608,16 +655,28 @@
   .team-section__person-image {
     width: 120px;
     height: 120px; }
+    @media only screen and (min-width: 1601px) {
+      .team-section__person-image {
+        width: 130px;
+        height: 130px; } }
   .team-section__person-name {
     font-size: 1.5em; }
     @media only screen and (max-width: 400px) {
       .team-section__person-name {
         font-size: 1.3em; } }
+    @media only screen and (min-width: 1601px) {
+      .team-section__person-name {
+        font-size: 2em;
+        margin-top: 8px;
+        margin-bottom: 5px; } }
   .team-section__person-desc {
     line-height: 1.5em; }
     @media only screen and (max-width: 400px) {
       .team-section__person-desc {
         line-height: 1.3em; } }
+    @media only screen and (min-width: 1601px) {
+      .team-section__person-desc {
+        font-size: 1.2em; } }
 
 .map-section {
   width: 100%;
@@ -635,6 +694,9 @@
   letter-spacing: 1px;
   padding-bottom: 20px;
   padding-top: 35px; }
+  @media only screen and (min-width: 1601px) {
+    .footer-section {
+      font-size: 1.2em; } }
   .footer-section__footer {
     padding-bottom: 15px;
     padding-left: 10%;
@@ -664,6 +726,11 @@ body {
   border-radius: 20px;
   letter-spacing: 1px;
   cursor: pointer; }
+  @media only screen and (min-width: 1601px) {
+    .btn {
+      font-size: 1.1em;
+      padding: 10px 50px;
+      border-radius: 25px; } }
 
 .row {
   /* 601 - 1200 */
