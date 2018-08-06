@@ -601,13 +601,17 @@
     @media only screen and (max-width: 400px) {
       .team-section__person {
         margin-bottom: 40px; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (min-width: 401px) and (max-width: 600px) {
     .team-section__person-info {
       display: flex;
       justify-content: center;
       flex-direction: column;
       margin-left: 5%;
       text-align: left; } }
+  @media only screen and (max-width: 400px) {
+    .team-section__person-info {
+      margin-top: 15px;
+      text-align: center; } }
   .team-section__person-image {
     width: 120px;
     height: 120px; }
