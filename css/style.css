@@ -295,18 +295,17 @@
       .offer-section__section-header {
         margin-bottom: 40px;
         font-size: 2em; } }
-  .offer-section__image {
+  .offer-section__image-wrapper {
     width: 25%;
-    margin-top: 10px;
     float: left; }
-    @media only screen and (min-width: 751px) and (max-width: 900px) {
+    @media only screen and (max-width: 750px) {
+      .offer-section__image-wrapper {
+        width: 100%; } }
+  .offer-section__image {
+    max-width: 100%;
+    margin-top: 10px; }
+    @media only screen and (max-width: 750px) {
       .offer-section__image {
-        width: 30%; } }
-    @media only screen and (min-width: 601px) and (max-width: 750px) {
-      .offer-section__image {
-        width: 40%;
-        float: none;
-        display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
@@ -314,7 +313,7 @@
   .offer-section__offer {
     width: 100%;
     text-align: left; }
-    @media only screen and (min-width: 601px) and (max-width: 750px) {
+    @media only screen and (max-width: 750px) {
       .offer-section__offer {
         text-align: center; } }
   .offer-section__offer-header {
@@ -324,10 +323,7 @@
     width: 65%;
     margin-left: 10%;
     float: right; }
-    @media only screen and (min-width: 751px) and (max-width: 900px) {
-      .offer-section__offer-details {
-        width: 60%; } }
-    @media only screen and (min-width: 601px) and (max-width: 750px) {
+    @media only screen and (max-width: 750px) {
       .offer-section__offer-details {
         clear: both;
         margin-left: 0;
