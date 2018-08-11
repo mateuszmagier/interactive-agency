@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             redundantProject = middleProject.previousElementSibling.previousElementSibling;
         projectsContainer.removeChild(redundantProject);
     }
-    
+
     // alternatywa - bez transform - tylko wrzucić projekt z lewej strony ekranu jako normalny projekt, a prawy wyrzucić za ekran
     function moveProjects(isRight) {
         middleProject = document.querySelector(".project--middle");
@@ -88,21 +88,39 @@ document.addEventListener("DOMContentLoaded", function () {
         let portfolioSection = document.querySelector(".portfolio-section");
         portfolioSection.appendChild(arrowsContainer);
     }
-    
+
     function toggleMenuEvent() {
         let toggleMenu = document.querySelector(".toggle-menu");
-        toggleMenu.addEventListener("click", function() {
+        toggleMenu.addEventListener("click", function () {
             this.classList.toggle("toggle-menu--closed");
             menuList.classList.toggle("menu__list--visible");
         });
     }
-    
+
     function toggleActiveMenuItem() {
-        for(let menuItem of menuItems) {
-            menuItem.addEventListener("click", function() {
+        for (let menuItem of menuItems) {
+            menuItem.addEventListener("click", function () {
                 menuList.querySelector(".menu__item--active").classList.remove("menu__item--active");
                 this.classList.add("menu__item--active");
             });
+        }
+    }
+
+    function scrollToSection(menuItemIndex, sectionClass) {
+        menuItems[menuItemIndex].addEventListener("click", function (e) {
+            e.preventDefault();
+            let section = document.querySelector(sectionClass);
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+
+    function addMenuItemsScrolling() {
+        let sectionClasses = [".home-section", ".about-section", ".offer-section", ".portfolio-section", ".map-section"];
+        for (let i = 0; i < menuItems.length; i++) {
+            scrollToSection(i, sectionClasses[i]);
         }
     }
 
@@ -111,4 +129,5 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleMenuEvent();
     menuItems = menuList.querySelectorAll(".menu__item");
     toggleActiveMenuItem();
+    addMenuItemsScrolling();
 });
