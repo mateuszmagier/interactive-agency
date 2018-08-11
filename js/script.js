@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let middleProject;
     let isLastMoveRight;
     let menu, menuList;
+    let menuItems;
 
     function deleteRedundantProject() {
         console.log("deleteRedundantProject");
@@ -95,8 +96,19 @@ document.addEventListener("DOMContentLoaded", function () {
             menuList.classList.toggle("menu__list--visible");
         });
     }
+    
+    function toggleActiveMenuItem() {
+        for(let menuItem of menuItems) {
+            menuItem.addEventListener("click", function() {
+                menuList.querySelector(".menu__item--active").classList.remove("menu__item--active");
+                this.classList.add("menu__item--active");
+            });
+        }
+    }
 
     addNavArrows();
     menuList = document.querySelector(".menu__list");
     toggleMenuEvent();
+    menuItems = menuList.querySelectorAll(".menu__item");
+    toggleActiveMenuItem();
 });

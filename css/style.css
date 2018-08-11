@@ -144,12 +144,16 @@
     .menu__item:hover {
       background-color: black;
       transition: all .3s ease-in; }
+    .menu__item--active {
+      background-color: black; }
     @media only screen and (min-width: 601px) {
       .menu__item {
         display: inline-flex;
         background-color: transparent; }
         .menu__item:hover {
-          background-color: transparent; } }
+          background-color: transparent; }
+        .menu__item--active .menu__link {
+          border-color: #313334; } }
   .menu__link {
     text-decoration: none;
     color: white;
@@ -157,6 +161,10 @@
     display: block;
     width: 100%;
     padding: 7px;
+    border: transparent solid 1px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: border-color .3s ease-in;
     /* > 600 */ }
     @media only screen and (min-width: 1601px) {
       .menu__link {
@@ -169,12 +177,6 @@
         display: inline;
         color: black;
         padding: 7px 20px; } }
-    .menu__link--active {
-      /* > 600 */ }
-      @media only screen and (min-width: 601px) {
-        .menu__link--active {
-          border: #313334 solid 1px;
-          border-radius: 20px; } }
 
 .scroll-down {
   text-align: center;
