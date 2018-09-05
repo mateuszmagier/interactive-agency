@@ -15,6 +15,9 @@
     margin-top: -60px;
     /* 601 - 900 */
     /* > 900 */ }
+    @media only screen and (max-height: 550px) {
+      .home-section__content {
+        margin-top: -120px; } }
     @media only screen and (min-width: 601px) and (max-width: 900px) {
       .home-section__content {
         padding-top: 60px;
