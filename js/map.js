@@ -1,4 +1,22 @@
 let map;
+let markerIcon = 'img/marker_small.png';
+
+//const media = window.matchMedia("(max-width: 500px)");
+//
+//if (media.matches) {
+//    console.log("smaller")
+//    markerIcon = 'img/marker_smaller.png';
+//} else {
+//    markerIcon = 'img/marker_small.png';
+//}
+//
+//media.addListener(function (media) {
+//    if (media.matches) {
+//        markerIcon = 'img/marker_smaller.png';
+//    } else {
+//        markerIcon = 'img/marker_small.png';
+//    }
+//});
 
 function initMap() {
     let newYork = {
@@ -13,7 +31,6 @@ function initMap() {
 
     let map = new google.maps.Map(document.getElementById('map'), options);
 
-    let markerIcon = 'img/marker_small.png';
     let marker = new google.maps.Marker({
         position: newYork,
         map: map,
