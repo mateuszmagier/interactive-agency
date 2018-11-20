@@ -15,6 +15,11 @@
     &__content {
         text-align: center;
         margin-top: -60px;
+
+        @media all and (max-width: 600px) {
+            width: 80%;
+            margin-left: 10%;
+        }
         
         @media only screen and (max-height: 550px) {
             margin-top: -120px;
@@ -257,6 +262,10 @@
     bottom: 5px;
     left: 0;
     right: 0;
+
+    @media all and (max-height: 400px) {
+        display: none;
+    }
 
     /* > 900 */
     @media only screen and (min-width: 901px) {

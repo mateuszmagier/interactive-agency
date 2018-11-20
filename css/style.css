@@ -15,6 +15,10 @@
     margin-top: -60px;
     /* 601 - 900 */
     /* > 900 */ }
+    @media all and (max-width: 600px) {
+      .home-section__content {
+        width: 80%;
+        margin-left: 10%; } }
     @media only screen and (max-height: 550px) {
       .home-section__content {
         margin-top: -120px; } }
@@ -192,6 +196,9 @@
   left: 0;
   right: 0;
   /* > 900 */ }
+  @media all and (max-height: 400px) {
+    .scroll-down {
+      display: none; } }
   @media only screen and (min-width: 901px) {
     .scroll-down {
       bottom: 20px; } }
