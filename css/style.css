@@ -702,6 +702,9 @@
 #map {
   height: 100%; }
 
+.hidden-header {
+  display: none; }
+
 .footer-section {
   width: 100%;
   font-family: 'Barlow Condensed', sans-serif;
